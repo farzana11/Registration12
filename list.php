@@ -52,6 +52,7 @@ $result = mysqli_query($link, $query);
         <td>Passing Year</td>
         <td>Career Objective</td>
         <td>Job Experience</td>
+
     </tr>
     <?php
     foreach($result as $row){
@@ -61,6 +62,7 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['id']?></td>
             <td><?php echo $row['first_name']?></td>
             <td><?php echo $row['last_name']?></td>
+
             <td>
                 <a href="view.php?id=<?php echo $row['id']?>">View/Show</a> |
                 <a href="#">Edit</a> |
